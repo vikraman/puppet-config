@@ -1,0 +1,7 @@
+[submodule "modules/concat"]
+	path = modules/concat
+	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "modules/portage"]
+	path = modules/portage
+	url = https://github.com/vikraman/puppet-portage.git
+	branch = deploy
