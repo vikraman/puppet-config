@@ -10,7 +10,7 @@ node 'vikraman.org' {
     'features':
       content => '-collision-protect -ebuild-locks fail-clean parallel-install -protect-owned';
     'makeopts':
-      content => '-j2';
+      content => "-j${$::processorcount + 1}";
     'use':
       content => 'bindist lzma minimal vhosts vim vim-syntax';
     'python_targets':
